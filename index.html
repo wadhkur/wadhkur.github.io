@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Cardiac imaging clinic offering careful, patient-centered diagnostic insight." />
+  <meta name="description" content="Single-doctor cardiac imaging website with patient-centered diagnostic consultation." />
   <title>Cardiac Imaging Clinic | Home</title>
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
@@ -12,101 +12,228 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="page">
-    <header class="header">
-      <div class="container navbar">
-        <a class="brand" href="index.html">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="Cardiac Imaging Clinic home">
           <span class="brand__mark" aria-hidden="true">CI</span>
           <span class="brand__text">Cardiac Imaging Clinic</span>
         </a>
-        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
-          <span aria-hidden="true"></span>
-        </button>
-        <nav class="nav__menu" id="nav-menu">
-          <ul class="nav__list" role="list">
-            <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
-            <li><a class="nav__link" href="services.html">Services</a></li>
-            <li><a class="nav__link" href="clinicians.html">Clinicians</a></li>
-            <li><a class="nav__link" href="patients.html">Patients</a></li>
-            <li><a class="nav__link" href="about.html">About</a></li>
-            <li><a class="nav__link" href="accessibility.html">Accessibility</a></li>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a data-nav-link href="index.html" aria-current="page">Home</a></li>
+            <li><a data-nav-link href="services.html">Services</a></li>
+            <li><a data-nav-link href="clinicians.html">Clinicians</a></li>
+            <li><a data-nav-link href="patients.html">Patients</a></li>
+            <li><a data-nav-link href="about.html">About</a></li>
+            <li><a data-nav-link href="accessibility.html">Accessibility</a></li>
           </ul>
-          <a class="cta" href="patients.html">Book a consultation</a>
+          <a class="btn btn--primary" href="patients.html">Request consultation</a>
         </nav>
+
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
       </div>
+      <div class="nav-overlay" data-nav-overlay hidden></div>
+      <nav class="nav-drawer" id="mobile-nav" data-nav-drawer aria-label="Mobile navigation">
+        <ul>
+          <li><a data-nav-link href="index.html" aria-current="page">Home</a></li>
+          <li><a data-nav-link href="services.html">Services</a></li>
+          <li><a data-nav-link href="clinicians.html">Clinicians</a></li>
+          <li><a data-nav-link href="patients.html">Patients</a></li>
+          <li><a data-nav-link href="about.html">About</a></li>
+          <li><a data-nav-link href="accessibility.html">Accessibility</a></li>
+        </ul>
+        <a class="btn btn--primary" href="patients.html">Request consultation</a>
+      </nav>
     </header>
 
+    <aside class="section-indicator" data-section-indicator aria-label="Section position"></aside>
+
     <main id="main">
-      <section class="hero section">
-        <div class="container hero__content">
-          <div data-animate>
-            <p class="hero__eyebrow">Cardiac imaging, thoughtfully delivered</p>
-            <h1>Clear insight for confident cardiac decisions</h1>
-            <p class="lead">A focused single-doctor practice providing attentive imaging consultations, careful study review, and collaborative planning with patients and clinicians.</p>
-            <div class="list-inline" aria-label="Practice highlights">
-              <span class="badge">Individual consultations</span>
-              <span class="badge">Evidence-informed protocols</span>
-              <span class="badge">Coordinated with your care team</span>
+      <section class="section hero" data-section-id data-section-label="Overview" id="overview">
+        <div class="container hero__layout">
+          <div class="hero__copy">
+            <p class="eyebrow" data-hero-stage style="--hero-delay: 80ms;">Single-doctor cardiac imaging</p>
+            <h1 data-hero-stage style="--hero-delay: 160ms;">Modern imaging clarity with measured clinical restraint</h1>
+            <p class="lead" data-hero-stage style="--hero-delay: 250ms;">Focused studies, careful protocol selection, and clear communication for both patients and referring clinicians.</p>
+            <div class="hero__actions" data-hero-stage style="--hero-delay: 340ms;">
+              <a class="btn btn--primary" href="services.html">View services</a>
+              <a class="btn btn--ghost" href="clinicians.html">For clinicians</a>
             </div>
-          </div>
-          <div class="card" data-animate>
-            <h2>What to expect</h2>
-            <ul class="key-points">
-              <li><strong>Preparation guidance</strong><span>Clear instructions tailored to the planned imaging study.</span></li>
-              <li><strong>Focused imaging</strong><span>Appropriate modality selection to address the clinical question.</span></li>
-              <li><strong>Results discussion</strong><span>Plain-language review of findings with time for questions.</span></li>
+            <ul class="pill-list hero__meta" data-hero-stage style="--hero-delay: 420ms;">
+              <li>Consultative interpretation</li>
+              <li>Structured reporting</li>
+              <li>Patient-first workflow</li>
             </ul>
-            <div class="list-inline" style="margin-top: 1rem;">
-              <a class="cta" href="services.html">Explore services</a>
-              <a class="cta cta--ghost" href="patients.html">Visit guide</a>
+          </div>
+
+          <figure class="media-frame media-frame--tall" data-hero-stage style="--hero-delay: 500ms;">
+            <picture>
+              <source type="image/avif" srcset="assets/img/hero/hero-mobile.avif 900w, assets/img/hero/hero-desktop.avif 1680w" sizes="(max-width: 64rem) 100vw, 45vw" />
+              <source type="image/webp" srcset="assets/img/hero/hero-mobile.webp 900w, assets/img/hero/hero-desktop.webp 1680w" sizes="(max-width: 64rem) 100vw, 45vw" />
+              <img src="assets/img/hero/hero-desktop.jpg" width="1680" height="1080" alt="Abstract clinical light gradients representing cardiac imaging flow" decoding="async" fetchpriority="high" />
+            </picture>
+          </figure>
+        </div>
+      </section>
+
+      <div class="section-divider" data-line aria-hidden="true"></div>
+
+      <section class="section section--surface" data-section-id data-section-label="Core services" id="core-services">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Core services</p>
+            <h2>Modalities aligned to the clinical question</h2>
+            <p>Every referral begins with protocol planning so the selected study addresses the exact diagnostic need.</p>
+          </div>
+
+          <ul class="icon-grid" role="list">
+            <li class="card card--icon" data-reveal data-reveal-group="home-cards">
+              <span class="card__icon" aria-hidden="true">EC</span>
+              <h3>Echocardiography</h3>
+              <p>Structured transthoracic and focused echo pathways with consistent measurement standards.</p>
+            </li>
+            <li class="card card--icon" data-reveal data-reveal-group="home-cards">
+              <span class="card__icon" aria-hidden="true">CT</span>
+              <h3>Cardiac CT</h3>
+              <p>Coronary and structural protocols selected with attention to image quality and dose context.</p>
+            </li>
+            <li class="card card--icon" data-reveal data-reveal-group="home-cards">
+              <span class="card__icon" aria-hidden="true">MR</span>
+              <h3>Cardiac MRI</h3>
+              <p>Tissue characterization and functional review with indication-led sequence planning.</p>
+            </li>
+            <li class="card card--icon" data-reveal data-reveal-group="home-cards">
+              <span class="card__icon" aria-hidden="true">ST</span>
+              <h3>Stress imaging</h3>
+              <p>Stress studies matched to patient context and interpreted alongside baseline function.</p>
+            </li>
+            <li class="card card--icon" data-reveal data-reveal-group="home-cards">
+              <span class="card__icon" aria-hidden="true">RV</span>
+              <h3>Second review</h3>
+              <p>Independent imaging review for nuanced questions or treatment planning discussions.</p>
+            </li>
+            <li class="card card--icon" data-reveal data-reveal-group="home-cards">
+              <span class="card__icon" aria-hidden="true">PL</span>
+              <h3>Care-plan support</h3>
+              <p>Interpretive summaries shared in plain language for patient and clinician alignment.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="section-divider" data-line aria-hidden="true"></div>
+
+      <section class="section" data-section-id data-section-label="Diagnostic pathway" id="diagnostic-pathway">
+        <div class="container feature-panel" data-panel>
+          <figure class="feature-panel__media" data-reveal>
+            <span class="feature-panel__media-mask" aria-hidden="true"></span>
+            <picture class="media-frame">
+              <source type="image/avif" srcset="assets/img/panels/panel-diagnostics-mobile.avif 760w, assets/img/panels/panel-diagnostics.avif 1400w" sizes="(max-width: 64rem) 100vw, 48vw" />
+              <source type="image/webp" srcset="assets/img/panels/panel-diagnostics-mobile.webp 760w, assets/img/panels/panel-diagnostics.webp 1400w" sizes="(max-width: 64rem) 100vw, 48vw" />
+              <img src="assets/img/panels/panel-diagnostics.jpg" width="1400" height="980" alt="Abstract panel suggesting multi-step diagnostic sequencing" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <div class="feature-panel__copy">
+            <p class="eyebrow" data-reveal>Diagnostic pathway</p>
+            <h2 data-reveal>A structured flow from referral to interpretation</h2>
+            <div class="timeline" role="list">
+              <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="home-timeline">
+                <span class="timeline__count" aria-hidden="true"></span>
+                <div>
+                  <h3>Clinical intake</h3>
+                  <p>Referral context, prior studies, and current concerns are reviewed before imaging selection.</p>
+                </div>
+              </article>
+              <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="home-timeline">
+                <span class="timeline__count" aria-hidden="true"></span>
+                <div>
+                  <h3>Protocol planning</h3>
+                  <p>Acquisition choices are adjusted to patient needs while preserving diagnostic confidence.</p>
+                </div>
+              </article>
+              <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="home-timeline">
+                <span class="timeline__count" aria-hidden="true"></span>
+                <div>
+                  <h3>Interpretive discussion</h3>
+                  <p>Findings are communicated in direct language with guidance for next clinical steps.</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section--muted">
-        <div class="container">
-          <h2 data-animate>Imaging services at a glance</h2>
-          <div class="grid grid--three">
-            <article class="card" data-animate>
-              <h3>Echocardiography</h3>
-              <p>Comprehensive transthoracic and focused studies to assess structure and function with careful technique.</p>
-            </article>
-            <article class="card" data-animate>
-              <h3>Cardiac CT</h3>
-              <p>Protocol selection aimed at clarity while balancing dose considerations for coronary and structural evaluation.</p>
-            </article>
-            <article class="card" data-animate>
-              <h3>Cardiac MRI</h3>
-              <p>Advanced tissue characterization and functional assessment guided by the clinical question.</p>
-            </article>
-            <article class="card" data-animate>
-              <h3>Stress imaging</h3>
-              <p>Stress protocols coordinated for safety and reliable assessment of perfusion and wall motion.</p>
-            </article>
-            <article class="card" data-animate>
-              <h3>Longitudinal follow-up</h3>
-              <p>Consistent measurement approaches for serial studies to support clinical decision-making.</p>
-            </article>
-            <article class="card" data-animate>
-              <h3>Consultation</h3>
-              <p>Interpretation review and collaborative planning with referring clinicians and care teams.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <div class="section-divider" data-line aria-hidden="true"></div>
 
-      <section class="section">
-        <div class="container split">
-          <div class="card" data-animate>
-            <h2>For clinicians</h2>
-            <p>Structured reports, timely communication, and modality selection aligned to the clinical question.</p>
-            <a class="cta" href="clinicians.html">Clinician resources</a>
+      <section class="section section--surface" data-section-id data-section-label="Feature panels" id="feature-panels">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Feature panels</p>
+            <h2>Built for patients and referring teams</h2>
+            <p>Three focused panels summarize how the practice balances precision, communication, and continuity.</p>
           </div>
-          <div class="card" data-animate>
-            <h2>For patients</h2>
-            <p>Supportive guidance before, during, and after imaging so you know what to expect and how to prepare.</p>
-            <a class="cta" href="patients.html">Patient guide</a>
+
+          <div class="panel-stack">
+            <article class="feature-panel" data-panel>
+              <figure class="feature-panel__media" data-reveal>
+                <span class="feature-panel__media-mask" aria-hidden="true"></span>
+                <picture class="media-frame">
+                  <source type="image/avif" srcset="assets/img/panels/panel-collaboration-mobile.avif 760w, assets/img/panels/panel-collaboration.avif 1400w" sizes="(max-width: 64rem) 100vw, 46vw" />
+                  <source type="image/webp" srcset="assets/img/panels/panel-collaboration-mobile.webp 760w, assets/img/panels/panel-collaboration.webp 1400w" sizes="(max-width: 64rem) 100vw, 46vw" />
+                  <img src="assets/img/panels/panel-collaboration.jpg" width="1400" height="980" alt="Abstract panel representing clinician collaboration" loading="lazy" decoding="async" />
+                </picture>
+              </figure>
+              <div class="feature-panel__copy">
+                <h3 data-reveal>Clinician partnership</h3>
+                <p data-reveal>Reports emphasize what matters clinically, and direct discussion is available when decisions are complex.</p>
+                <ul class="feature-panel__points" data-reveal>
+                  <li><span>+</span><span>Referral context stays central to interpretation.</span></li>
+                  <li><span>+</span><span>Comparative review is integrated when prior imaging exists.</span></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="feature-panel feature-panel--reverse" data-panel>
+              <div class="feature-panel__copy">
+                <h3 data-reveal>Patient communication</h3>
+                <p data-reveal>Preparation, in-study comfort, and post-study explanation are handled in plain language.</p>
+                <ul class="feature-panel__points" data-reveal>
+                  <li><span>+</span><span>Visit expectations are outlined before imaging begins.</span></li>
+                  <li><span>+</span><span>Questions are addressed directly after the study where appropriate.</span></li>
+                </ul>
+              </div>
+              <figure class="feature-panel__media" data-reveal>
+                <span class="feature-panel__media-mask" aria-hidden="true"></span>
+                <picture class="media-frame">
+                  <source type="image/avif" srcset="assets/img/panels/panel-patient-mobile.avif 760w, assets/img/panels/panel-patient.avif 1400w" sizes="(max-width: 64rem) 100vw, 46vw" />
+                  <source type="image/webp" srcset="assets/img/panels/panel-patient-mobile.webp 760w, assets/img/panels/panel-patient.webp 1400w" sizes="(max-width: 64rem) 100vw, 46vw" />
+                  <img src="assets/img/panels/panel-patient.jpg" width="1400" height="980" alt="Abstract panel representing supportive patient communication" loading="lazy" decoding="async" />
+                </picture>
+              </figure>
+            </article>
+
+            <article class="feature-panel" data-panel>
+              <figure class="feature-panel__media" data-reveal>
+                <span class="feature-panel__media-mask" aria-hidden="true"></span>
+                <picture class="media-frame">
+                  <source type="image/avif" srcset="assets/img/panels/panel-governance-mobile.avif 760w, assets/img/panels/panel-governance.avif 1400w" sizes="(max-width: 64rem) 100vw, 46vw" />
+                  <source type="image/webp" srcset="assets/img/panels/panel-governance-mobile.webp 760w, assets/img/panels/panel-governance.webp 1400w" sizes="(max-width: 64rem) 100vw, 46vw" />
+                  <img src="assets/img/panels/panel-governance.jpg" width="1400" height="980" alt="Abstract panel representing quality governance" loading="lazy" decoding="async" />
+                </picture>
+              </figure>
+              <div class="feature-panel__copy">
+                <h3 data-reveal>Quality governance</h3>
+                <p data-reveal>Protocol discipline and reproducible reporting support continuity across follow-up imaging.</p>
+                <ul class="feature-panel__points" data-reveal>
+                  <li><span>+</span><span>Consistent measurement approach for interval comparison.</span></li>
+                  <li><span>+</span><span>Clinical rationale documented for protocol adjustments.</span></li>
+                </ul>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -114,32 +241,32 @@
 
     <footer class="footer">
       <div class="container footer__grid">
-        <div>
-          <div class="brand" aria-label="Cardiac Imaging Clinic">
+        <section>
+          <a class="brand" href="index.html">
             <span class="brand__mark" aria-hidden="true">CI</span>
             <span class="brand__text">Cardiac Imaging Clinic</span>
-          </div>
-          <p class="footer__meta">Thoughtful cardiac imaging with direct access to the physician performing your study.</p>
-          <p class="footer__meta">Appointments by request. Coordination with your care team is welcomed.</p>
-        </div>
-        <div>
-          <h3 class="sr-only">Site links</h3>
-          <ul class="footer__nav" role="list">
+          </a>
+          <p>Single-doctor cardiac imaging consultations with direct physician oversight and coordinated communication.</p>
+        </section>
+        <section>
+          <h2 class="sr-only">Policy links</h2>
+          <ul class="footer__nav">
             <li><a href="privacy.html">Privacy</a></li>
             <li><a href="cookies.html">Cookies</a></li>
             <li><a href="terms.html">Terms</a></li>
             <li><a href="disclaimer.html">Disclaimer</a></li>
             <li><a href="accessibility.html">Accessibility</a></li>
           </ul>
-        </div>
-        <div>
-          <h3 class="sr-only">Contact</h3>
-          <p class="footer__meta">Please contact the clinic team to arrange imaging or discuss a referral. Secure communication can be coordinated with your provider.</p>
-          <p class="footer__meta">© <span id="site-year"></span> Cardiac Imaging Clinic</p>
-        </div>
+        </section>
+        <section>
+          <h2 class="sr-only">Contact context</h2>
+          <p>Appointments are arranged through the clinic team. Clinical urgency should be directed to your treating provider.</p>
+          <small>© <span data-year></span> Cardiac Imaging Clinic</small>
+        </section>
       </div>
     </footer>
   </div>
+
   <script src="assets/js/accessibility.js"></script>
   <script src="assets/js/animations.js"></script>
   <script src="assets/js/main.js"></script>

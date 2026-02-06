@@ -12,84 +12,166 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="page">
-    <header class="header">
-      <div class="container navbar">
-        <a class="brand" href="index.html">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="Cardiac Imaging Clinic home">
           <span class="brand__mark" aria-hidden="true">CI</span>
           <span class="brand__text">Cardiac Imaging Clinic</span>
         </a>
-        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
-          <span aria-hidden="true"></span>
-        </button>
-        <nav class="nav__menu" id="nav-menu">
-          <ul class="nav__list" role="list">
-            <li><a class="nav__link" href="index.html">Home</a></li>
-            <li><a class="nav__link" href="services.html">Services</a></li>
-            <li><a class="nav__link" href="clinicians.html">Clinicians</a></li>
-            <li><a class="nav__link" href="patients.html">Patients</a></li>
-            <li><a class="nav__link" href="about.html">About</a></li>
-            <li><a class="nav__link" href="accessibility.html" aria-current="page">Accessibility</a></li>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a data-nav-link href="index.html">Home</a></li>
+            <li><a data-nav-link href="services.html">Services</a></li>
+            <li><a data-nav-link href="clinicians.html">Clinicians</a></li>
+            <li><a data-nav-link href="patients.html">Patients</a></li>
+            <li><a data-nav-link href="about.html">About</a></li>
+            <li><a data-nav-link href="accessibility.html" aria-current="page">Accessibility</a></li>
           </ul>
-          <a class="cta" href="patients.html">Book a consultation</a>
+          <a class="btn btn--primary" href="patients.html">Request consultation</a>
         </nav>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
       </div>
+      <div class="nav-overlay" data-nav-overlay hidden></div>
+      <nav class="nav-drawer" id="mobile-nav" data-nav-drawer aria-label="Mobile navigation">
+        <ul>
+          <li><a data-nav-link href="index.html">Home</a></li>
+          <li><a data-nav-link href="services.html">Services</a></li>
+          <li><a data-nav-link href="clinicians.html">Clinicians</a></li>
+          <li><a data-nav-link href="patients.html">Patients</a></li>
+          <li><a data-nav-link href="about.html">About</a></li>
+          <li><a data-nav-link href="accessibility.html" aria-current="page">Accessibility</a></li>
+        </ul>
+        <a class="btn btn--primary" href="patients.html">Request consultation</a>
+      </nav>
     </header>
 
-    <main id="main" class="section">
-      <div class="container">
-        <h1 data-animate>Accessibility Statement</h1>
-        <p class="lead" data-animate>This site is intended to be usable by everyone. The design follows WCAG 2.2 level AA guidance where practical for a static site.</p>
+    <aside class="section-indicator" data-section-indicator aria-label="Section position"></aside>
 
-        <div class="grid grid--two">
-          <article class="card" data-animate>
-            <h2>Standards</h2>
-            <p>The site uses semantic HTML, clear focus states, high-contrast text, and supports keyboard navigation. Animations respect the user’s prefers-reduced-motion setting.</p>
-          </article>
-          <article class="card" data-animate>
-            <h2>Testing</h2>
-            <p>Pages are reviewed for keyboard access, logical heading order, and form-free navigation appropriate to static content.</p>
-          </article>
-          <article class="card" data-animate>
-            <h2>Known limitations</h2>
-            <p>Embedded media and downloadable documents are not present. If new formats are added, alternative text or transcripts will be provided.</p>
-          </article>
-          <article class="card" data-animate>
-            <h2>Feedback</h2>
-            <p>If you experience barriers, please inform the clinic team. Feedback will be reviewed and addressed where feasible.</p>
-          </article>
+    <main id="main">
+      <section class="section hero" data-section-id data-section-label="Accessibility overview" id="accessibility-overview">
+        <div class="container hero__layout">
+          <div class="hero__copy">
+            <p class="eyebrow" data-hero-stage style="--hero-delay: 80ms;">Accessibility</p>
+            <h1 data-hero-stage style="--hero-delay: 160ms;">Accessibility statement</h1>
+            <p class="lead" data-hero-stage style="--hero-delay: 250ms;">This website is designed for inclusive access with semantic structure, keyboard support, and reduced-motion respect.</p>
+            <div class="hero__actions" data-hero-stage style="--hero-delay: 340ms;">
+              <a class="btn btn--primary" href="privacy.html">Privacy notice</a>
+              <a class="btn btn--ghost" href="about.html">About the practice</a>
+            </div>
+          </div>
+          <figure class="media-frame" data-hero-stage style="--hero-delay: 460ms;">
+            <picture>
+              <source type="image/avif" srcset="assets/img/panels/panel-collaboration-mobile.avif 760w, assets/img/panels/panel-collaboration.avif 1400w" sizes="(max-width: 64rem) 100vw, 44vw" />
+              <source type="image/webp" srcset="assets/img/panels/panel-collaboration-mobile.webp 760w, assets/img/panels/panel-collaboration.webp 1400w" sizes="(max-width: 64rem) 100vw, 44vw" />
+              <img src="assets/img/panels/panel-collaboration.jpg" width="1400" height="980" alt="Abstract accessibility support visual" decoding="async" fetchpriority="high" />
+            </picture>
+          </figure>
         </div>
-      </div>
+      </section>
+
+      <div class="section-divider" data-line aria-hidden="true"></div>
+
+      <section class="section section--surface" data-section-id data-section-label="Accessibility commitments" id="accessibility-commitments">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Accessibility commitments</p>
+            <h2>Current implementation focus</h2>
+          </div>
+          <div class="grid grid--3">
+            <article class="card" data-reveal data-reveal-group="a11y-cards">
+              <h3>Semantic structure</h3>
+              <p>Pages use heading hierarchy, landmark elements, and descriptive link labeling.</p>
+            </article>
+            <article class="card" data-reveal data-reveal-group="a11y-cards">
+              <h3>Keyboard support</h3>
+              <p>Primary interactions are reachable by keyboard with visible focus indicators.</p>
+            </article>
+            <article class="card" data-reveal data-reveal-group="a11y-cards">
+              <h3>Motion preferences</h3>
+              <p>Animation behavior adapts when reduced-motion preferences are enabled.</p>
+            </article>
+            <article class="card" data-reveal data-reveal-group="a11y-cards">
+              <h3>Responsive readability</h3>
+              <p>Typography and layout scale with fluid values across small phones through desktop displays.</p>
+            </article>
+            <article class="card" data-reveal data-reveal-group="a11y-cards">
+              <h3>Navigation consistency</h3>
+              <p>Header, mobile navigation, and footer structure stay consistent across pages.</p>
+            </article>
+            <article class="card" data-reveal data-reveal-group="a11y-cards">
+              <h3>Feedback channel</h3>
+              <p>Accessibility issues reported to the clinic team can be reviewed for practical remediation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" data-line aria-hidden="true"></div>
+
+      <section class="section" data-section-id data-section-label="Review cycle" id="review-cycle">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Review cycle</p>
+            <h2>Accessibility QA flow</h2>
+          </div>
+          <div class="timeline" role="list">
+            <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="a11y-flow">
+              <span class="timeline__count" aria-hidden="true"></span>
+              <div>
+                <h3>Baseline checks</h3>
+                <p>Structure, focus behavior, and visual contrast are reviewed across templates.</p>
+              </div>
+            </article>
+            <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="a11y-flow">
+              <span class="timeline__count" aria-hidden="true"></span>
+              <div>
+                <h3>Device-width verification</h3>
+                <p>Layouts are validated at representative mobile, tablet, laptop, and desktop widths.</p>
+              </div>
+            </article>
+            <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="a11y-flow">
+              <span class="timeline__count" aria-hidden="true"></span>
+              <div>
+                <h3>Issue remediation</h3>
+                <p>Detected accessibility gaps are prioritized and addressed within the static-site design constraints.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container footer__grid">
-        <div>
-          <div class="brand" aria-label="Cardiac Imaging Clinic">
+        <section>
+          <a class="brand" href="index.html">
             <span class="brand__mark" aria-hidden="true">CI</span>
             <span class="brand__text">Cardiac Imaging Clinic</span>
-          </div>
-          <p class="footer__meta">Thoughtful cardiac imaging with direct access to the physician performing your study.</p>
-          <p class="footer__meta">Appointments by request. Coordination with your care team is welcomed.</p>
-        </div>
-        <div>
-          <h3 class="sr-only">Site links</h3>
-          <ul class="footer__nav" role="list">
+          </a>
+          <p>Single-doctor cardiac imaging consultations with direct physician oversight and coordinated communication.</p>
+        </section>
+        <section>
+          <h2 class="sr-only">Policy links</h2>
+          <ul class="footer__nav">
             <li><a href="privacy.html">Privacy</a></li>
             <li><a href="cookies.html">Cookies</a></li>
             <li><a href="terms.html">Terms</a></li>
             <li><a href="disclaimer.html">Disclaimer</a></li>
             <li><a href="accessibility.html">Accessibility</a></li>
           </ul>
-        </div>
-        <div>
-          <h3 class="sr-only">Contact</h3>
-          <p class="footer__meta">Please contact the clinic team to arrange imaging or discuss a referral. Secure communication can be coordinated with your provider.</p>
-          <p class="footer__meta">© <span id="site-year"></span> Cardiac Imaging Clinic</p>
-        </div>
+        </section>
+        <section>
+          <h2 class="sr-only">Contact context</h2>
+          <p>Appointments are arranged through the clinic team. Clinical urgency should be directed to your treating provider.</p>
+          <small>© <span data-year></span> Cardiac Imaging Clinic</small>
+        </section>
       </div>
     </footer>
   </div>
+
   <script src="assets/js/accessibility.js"></script>
   <script src="assets/js/animations.js"></script>
   <script src="assets/js/main.js"></script>

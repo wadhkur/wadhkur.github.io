@@ -12,88 +12,132 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="page">
-    <header class="header">
-      <div class="container navbar">
-        <a class="brand" href="index.html">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="Cardiac Imaging Clinic home">
           <span class="brand__mark" aria-hidden="true">CI</span>
           <span class="brand__text">Cardiac Imaging Clinic</span>
         </a>
-        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
-          <span aria-hidden="true"></span>
-        </button>
-        <nav class="nav__menu" id="nav-menu">
-          <ul class="nav__list" role="list">
-            <li><a class="nav__link" href="index.html">Home</a></li>
-            <li><a class="nav__link" href="services.html">Services</a></li>
-            <li><a class="nav__link" href="clinicians.html">Clinicians</a></li>
-            <li><a class="nav__link" href="patients.html">Patients</a></li>
-            <li><a class="nav__link" href="about.html">About</a></li>
-            <li><a class="nav__link" href="accessibility.html">Accessibility</a></li>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a data-nav-link href="index.html">Home</a></li>
+            <li><a data-nav-link href="services.html">Services</a></li>
+            <li><a data-nav-link href="clinicians.html">Clinicians</a></li>
+            <li><a data-nav-link href="patients.html">Patients</a></li>
+            <li><a data-nav-link href="about.html">About</a></li>
+            <li><a data-nav-link href="accessibility.html">Accessibility</a></li>
           </ul>
-          <a class="cta" href="patients.html">Book a consultation</a>
+          <a class="btn btn--primary" href="patients.html">Request consultation</a>
         </nav>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
       </div>
+      <div class="nav-overlay" data-nav-overlay hidden></div>
+      <nav class="nav-drawer" id="mobile-nav" data-nav-drawer aria-label="Mobile navigation">
+        <ul>
+          <li><a data-nav-link href="index.html">Home</a></li>
+          <li><a data-nav-link href="services.html">Services</a></li>
+          <li><a data-nav-link href="clinicians.html">Clinicians</a></li>
+          <li><a data-nav-link href="patients.html">Patients</a></li>
+          <li><a data-nav-link href="about.html">About</a></li>
+          <li><a data-nav-link href="accessibility.html">Accessibility</a></li>
+        </ul>
+        <a class="btn btn--primary" href="patients.html">Request consultation</a>
+      </nav>
     </header>
 
-    <main id="main" class="section">
-      <div class="container">
-        <h1 data-animate>Disclaimer</h1>
-        <p class="lead" data-animate>The information on this site is provided in good faith for general awareness. It should not be relied on as a substitute for professional medical advice.</p>
+    <aside class="section-indicator" data-section-indicator aria-label="Section position"></aside>
 
-        <div class="grid grid--two">
-          <article class="card" data-animate>
-            <h2>No medical advice</h2>
-            <p>Content is not personalized medical guidance. Decisions about your health should be made with your clinician.</p>
-          </article>
-          <article class="card" data-animate>
-            <h2>Clinical variability</h2>
-            <p>Diagnostic approaches vary based on individual circumstances. Protocols may change as practice standards evolve.</p>
-          </article>
-          <article class="card" data-animate>
-            <h2>No warranty</h2>
-            <p>While efforts are made to keep information accurate, the clinic does not guarantee completeness or timeliness.</p>
-          </article>
-          <article class="card" data-animate>
-            <h2>Emergencies</h2>
-            <p>Do not use this site for urgent or emergency needs. Seek immediate in-person care or contact local emergency services.</p>
-          </article>
-          <article class="card" data-animate>
-            <h2>External resources</h2>
-            <p>Any external references are for convenience. The clinic does not control or endorse external content.</p>
-          </article>
+    <main id="main">
+      <section class="section hero" data-section-id data-section-label="Disclaimer overview" id="disclaimer-overview">
+        <div class="container hero__layout">
+          <div class="hero__copy">
+            <p class="eyebrow" data-hero-stage style="--hero-delay: 80ms;">Policy</p>
+            <h1 data-hero-stage style="--hero-delay: 160ms;">Disclaimer</h1>
+            <p class="lead" data-hero-stage style="--hero-delay: 250ms;">Website content is intended for general information and should not be treated as individualized medical advice.</p>
+            <div class="hero__actions" data-hero-stage style="--hero-delay: 340ms;">
+              <a class="btn btn--primary" href="terms.html">Terms of use</a>
+              <a class="btn btn--ghost" href="privacy.html">Privacy notice</a>
+            </div>
+          </div>
+          <figure class="media-frame" data-hero-stage style="--hero-delay: 460ms;">
+            <picture>
+              <source type="image/avif" srcset="assets/img/panels/panel-governance-mobile.avif 760w, assets/img/panels/panel-governance.avif 1400w" sizes="(max-width: 64rem) 100vw, 44vw" />
+              <source type="image/webp" srcset="assets/img/panels/panel-governance-mobile.webp 760w, assets/img/panels/panel-governance.webp 1400w" sizes="(max-width: 64rem) 100vw, 44vw" />
+              <img src="assets/img/panels/panel-governance.jpg" width="1400" height="980" alt="Abstract legal and clinical caution visual" decoding="async" fetchpriority="high" />
+            </picture>
+          </figure>
         </div>
-      </div>
+      </section>
+
+      <div class="section-divider" data-line aria-hidden="true"></div>
+
+      <section class="section section--surface" data-section-id data-section-label="Disclaimer details" id="disclaimer-details">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Disclaimer details</p>
+            <h2>Scope limitations and care boundaries</h2>
+          </div>
+          <div class="grid grid--3">
+            <article class="card" data-reveal data-reveal-group="disclaimer-cards">
+              <h3>No individualized diagnosis here</h3>
+              <p>This website does not provide diagnosis, treatment, or emergency triage guidance.</p>
+            </article>
+            <article class="card" data-reveal data-reveal-group="disclaimer-cards">
+              <h3>Clinical variability</h3>
+              <p>Imaging decisions differ by patient context and should be made with your treating clinician.</p>
+            </article>
+            <article class="card" data-reveal data-reveal-group="disclaimer-cards">
+              <h3>No guarantee of completeness</h3>
+              <p>Information is maintained in good faith but may not cover every clinical scenario.</p>
+            </article>
+            <article class="card" data-reveal data-reveal-group="disclaimer-cards">
+              <h3>Emergency situations</h3>
+              <p>Urgent symptoms require immediate in-person care through appropriate emergency channels.</p>
+            </article>
+            <article class="card" data-reveal data-reveal-group="disclaimer-cards">
+              <h3>External content</h3>
+              <p>Linked resources are outside this website’s control and may change independently.</p>
+            </article>
+            <article class="card" data-reveal data-reveal-group="disclaimer-cards">
+              <h3>Policy changes</h3>
+              <p>This disclaimer may be revised to reflect updates in website scope or governance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container footer__grid">
-        <div>
-          <div class="brand" aria-label="Cardiac Imaging Clinic">
+        <section>
+          <a class="brand" href="index.html">
             <span class="brand__mark" aria-hidden="true">CI</span>
             <span class="brand__text">Cardiac Imaging Clinic</span>
-          </div>
-          <p class="footer__meta">Thoughtful cardiac imaging with direct access to the physician performing your study.</p>
-          <p class="footer__meta">Appointments by request. Coordination with your care team is welcomed.</p>
-        </div>
-        <div>
-          <h3 class="sr-only">Site links</h3>
-          <ul class="footer__nav" role="list">
+          </a>
+          <p>Single-doctor cardiac imaging consultations with direct physician oversight and coordinated communication.</p>
+        </section>
+        <section>
+          <h2 class="sr-only">Policy links</h2>
+          <ul class="footer__nav">
             <li><a href="privacy.html">Privacy</a></li>
             <li><a href="cookies.html">Cookies</a></li>
             <li><a href="terms.html">Terms</a></li>
             <li><a href="disclaimer.html">Disclaimer</a></li>
             <li><a href="accessibility.html">Accessibility</a></li>
           </ul>
-        </div>
-        <div>
-          <h3 class="sr-only">Contact</h3>
-          <p class="footer__meta">Please contact the clinic team to arrange imaging or discuss a referral. Secure communication can be coordinated with your provider.</p>
-          <p class="footer__meta">© <span id="site-year"></span> Cardiac Imaging Clinic</p>
-        </div>
+        </section>
+        <section>
+          <h2 class="sr-only">Contact context</h2>
+          <p>Appointments are arranged through the clinic team. Clinical urgency should be directed to your treating provider.</p>
+          <small>© <span data-year></span> Cardiac Imaging Clinic</small>
+        </section>
       </div>
     </footer>
   </div>
+
   <script src="assets/js/accessibility.js"></script>
   <script src="assets/js/animations.js"></script>
   <script src="assets/js/main.js"></script>

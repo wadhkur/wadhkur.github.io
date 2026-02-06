@@ -1,31 +1,45 @@
 (function () {
-  document.documentElement.classList.add('js-enabled');
+  var reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-  const skipLink = document.querySelector('.skip-link');
+  function syncReducedClass() {
+    document.documentElement.classList.toggle('prefers-reduced-motion', reducedMotionQuery.matches);
+  }
+
+  syncReducedClass();
+  if (typeof reducedMotionQuery.addEventListener === 'function') {
+    reducedMotionQuery.addEventListener('change', syncReducedClass);
+  }
+
+  var skipLink = document.querySelector('.skip-link');
   if (skipLink) {
-    skipLink.addEventListener('click', (event) => {
-      const targetId = skipLink.getAttribute('href')?.replace('#', '') || 'main';
-      const target = document.getElementById(targetId);
-      if (target) {
-        target.setAttribute('tabindex', '-1');
-        target.focus();
-        target.addEventListener(
-          'blur',
-          () => target.removeAttribute('tabindex'),
-          { once: true }
-        );
+    skipLink.addEventListener('click', function () {
+      var targetId = (skipLink.getAttribute('href') || '#main').slice(1);
+      var target = document.getElementById(targetId);
+      if (!target) {
+        return;
       }
+
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: false });
+      target.addEventListener(
+        'blur',
+        function () {
+          target.removeAttribute('tabindex');
+        },
+        { once: true }
+      );
     });
   }
 
-  // Mark current page link for assistive tech if not already set in markup
-  const current = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav__link');
-  navLinks.forEach((link) => {
-    const href = link.getAttribute('href');
-    if (!href) return;
-    const isActive = (current === '' && href === 'index.html') || href === current;
-    if (isActive && !link.hasAttribute('aria-current')) {
+  var page = window.location.pathname.split('/').pop() || 'index.html';
+  var links = document.querySelectorAll('a[data-nav-link]');
+  links.forEach(function (link) {
+    var href = link.getAttribute('href');
+    if (!href) {
+      return;
+    }
+    var normalizedHref = href.replace('./', '');
+    if (normalizedHref === page || (page === '' && normalizedHref === 'index.html')) {
       link.setAttribute('aria-current', 'page');
     }
   });
