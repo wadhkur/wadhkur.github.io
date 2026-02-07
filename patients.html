@@ -1,199 +1,212 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Patient preparation, visit flow, and post-imaging guidance." />
-  <title>Cardiac Imaging Clinic | Patients</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For Patients | Second Opinion Pathway</title>
+  <meta name="description" content="Patient information and second opinion pathway for cardiac imaging interpretation." />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/animations.css" />
+  <script src="assets/js/ui.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="container header-row">
-        <a class="brand" href="index.html" aria-label="Cardiac Imaging Clinic home">
-          <span class="brand__mark" aria-hidden="true">CI</span>
-          <span class="brand__text">Cardiac Imaging Clinic</span>
-        </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <ul class="nav-list">
-            <li><a data-nav-link href="index.html">Home</a></li>
-            <li><a data-nav-link href="services.html">Services</a></li>
-            <li><a data-nav-link href="clinicians.html">Clinicians</a></li>
-            <li><a data-nav-link href="patients.html" aria-current="page">Patients</a></li>
-            <li><a data-nav-link href="about.html">About</a></li>
-            <li><a data-nav-link href="accessibility.html">Accessibility</a></li>
-          </ul>
-          <a class="btn btn--primary" href="patients.html">Request consultation</a>
-        </nav>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
-          <span class="nav-toggle__bars" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div class="nav-overlay" data-nav-overlay hidden></div>
-      <nav class="nav-drawer" id="mobile-nav" data-nav-drawer aria-label="Mobile navigation">
-        <ul>
-          <li><a data-nav-link href="index.html">Home</a></li>
-          <li><a data-nav-link href="services.html">Services</a></li>
-          <li><a data-nav-link href="clinicians.html">Clinicians</a></li>
-          <li><a data-nav-link href="patients.html" aria-current="page">Patients</a></li>
-          <li><a data-nav-link href="about.html">About</a></li>
-          <li><a data-nav-link href="accessibility.html">Accessibility</a></li>
-        </ul>
-        <a class="btn btn--primary" href="patients.html">Request consultation</a>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container">
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Dr Muntasir Abo Al Hayja</strong>
+          <span>Cardiac Interpretation</span>
+        </div>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="clinicians.html">Clinicians</a>
+        <a data-nav href="patients.html">Patients</a>
+        <a data-nav href="about.html">About & Contact</a>
       </nav>
-    </header>
 
-    <aside class="section-indicator" data-section-indicator aria-label="Section position"></aside>
-
-    <main id="main">
-      <section class="section hero" data-section-id data-section-label="Patient overview" id="patient-overview">
-        <div class="container hero__layout">
-          <div class="hero__copy">
-            <p class="eyebrow" data-hero-stage style="--hero-delay: 80ms;">For patients</p>
-            <h1 data-hero-stage style="--hero-delay: 160ms;">A calm, clear imaging experience from arrival to follow-up</h1>
-            <p class="lead" data-hero-stage style="--hero-delay: 250ms;">Preparation guidance is straightforward, in-study communication stays active, and next steps are explained without jargon.</p>
-            <div class="hero__actions" data-hero-stage style="--hero-delay: 340ms;">
-              <a class="btn btn--primary" href="services.html">See imaging options</a>
-              <a class="btn btn--ghost" href="about.html">Meet the practice</a>
-            </div>
-          </div>
-          <figure class="media-frame" data-hero-stage style="--hero-delay: 460ms;">
-            <picture>
-              <source type="image/avif" srcset="assets/img/panels/panel-patient-mobile.avif 760w, assets/img/panels/panel-patient.avif 1400w" sizes="(max-width: 64rem) 100vw, 44vw" />
-              <source type="image/webp" srcset="assets/img/panels/panel-patient-mobile.webp 760w, assets/img/panels/panel-patient.webp 1400w" sizes="(max-width: 64rem) 100vw, 44vw" />
-              <img src="assets/img/panels/panel-patient.jpg" width="1400" height="980" alt="Abstract visual representing guided patient care" decoding="async" fetchpriority="high" />
-            </picture>
-          </figure>
-        </div>
-      </section>
-
-      <div class="section-divider" data-line aria-hidden="true"></div>
-
-      <section class="section section--surface" data-section-id data-section-label="Visit timeline" id="visit-timeline">
-        <div class="container">
-          <div class="section__head" data-reveal>
-            <p class="eyebrow">Visit timeline</p>
-            <h2>What your visit typically includes</h2>
-          </div>
-          <div class="timeline" role="list">
-            <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="patient-flow">
-              <span class="timeline__count" aria-hidden="true"></span>
-              <div>
-                <h3>Pre-visit briefing</h3>
-                <p>Instructions are shared in advance, including any preparation details related to your study.</p>
-              </div>
-            </article>
-            <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="patient-flow">
-              <span class="timeline__count" aria-hidden="true"></span>
-              <div>
-                <h3>On-site check-in</h3>
-                <p>Your team reviews safety considerations and confirms that the imaging plan is clear.</p>
-              </div>
-            </article>
-            <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="patient-flow">
-              <span class="timeline__count" aria-hidden="true"></span>
-              <div>
-                <h3>Imaging and support</h3>
-                <p>During imaging, communication remains active so you understand each step as it happens.</p>
-              </div>
-            </article>
-            <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="patient-flow">
-              <span class="timeline__count" aria-hidden="true"></span>
-              <div>
-                <h3>Post-study discussion</h3>
-                <p>Results pathway and follow-up context are reviewed with your care plan in mind.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <div class="section-divider" data-line aria-hidden="true"></div>
-
-      <section class="section" data-section-id data-section-label="Preparation guide" id="preparation-guide">
-        <div class="container feature-panel feature-panel--reverse" data-panel>
-          <div class="feature-panel__copy">
-            <p class="eyebrow" data-reveal>Preparation guide</p>
-            <h2 data-reveal>Bring context that helps your study run smoothly</h2>
-            <ul class="feature-panel__points" data-reveal>
-              <li><span>+</span><span>Current medication list and updates from your treating team.</span></li>
-              <li><span>+</span><span>Known allergies and past contrast or medication reactions.</span></li>
-              <li><span>+</span><span>Prior cardiac imaging reports when available.</span></li>
-            </ul>
-            <p data-reveal class="muted">If your condition changes before the appointment, let the clinic team know so planning can be adjusted.</p>
-          </div>
-          <figure class="feature-panel__media" data-reveal>
-            <span class="feature-panel__media-mask" aria-hidden="true"></span>
-            <picture class="media-frame">
-              <source type="image/avif" srcset="assets/img/panels/panel-governance-mobile.avif 760w, assets/img/panels/panel-governance.avif 1400w" sizes="(max-width: 64rem) 100vw, 48vw" />
-              <source type="image/webp" srcset="assets/img/panels/panel-governance-mobile.webp 760w, assets/img/panels/panel-governance.webp 1400w" sizes="(max-width: 64rem) 100vw, 48vw" />
-              <img src="assets/img/panels/panel-governance.jpg" width="1400" height="980" alt="Abstract panel representing structured patient preparation" loading="lazy" decoding="async" />
-            </picture>
-          </figure>
-        </div>
-      </section>
-
-      <div class="section-divider" data-line aria-hidden="true"></div>
-
-      <section class="section section--surface" data-section-id data-section-label="Support options" id="support-options">
-        <div class="container">
-          <div class="section__head" data-reveal>
-            <p class="eyebrow">Support options</p>
-            <h2>Communication support throughout your pathway</h2>
-          </div>
-          <div class="grid grid--3">
-            <article class="card" data-reveal data-reveal-group="patient-support">
-              <h3>Plain-language summaries</h3>
-              <p>Complex findings are explained in accessible terms alongside your medical context.</p>
-            </article>
-            <article class="card" data-reveal data-reveal-group="patient-support">
-              <h3>Care-team coordination</h3>
-              <p>Results can be aligned with your referring clinician to keep treatment plans consistent.</p>
-            </article>
-            <article class="card" data-reveal data-reveal-group="patient-support">
-              <h3>Follow-up readiness</h3>
-              <p>Questions about next appointments or repeat imaging can be discussed after your visit.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer__grid">
-        <section>
-          <a class="brand" href="index.html">
-            <span class="brand__mark" aria-hidden="true">CI</span>
-            <span class="brand__text">Cardiac Imaging Clinic</span>
-          </a>
-          <p>Single-doctor cardiac imaging consultations with direct physician oversight and coordinated communication.</p>
-        </section>
-        <section>
-          <h2 class="sr-only">Policy links</h2>
-          <ul class="footer__nav">
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="terms.html">Terms</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-            <li><a href="accessibility.html">Accessibility</a></li>
-          </ul>
-        </section>
-        <section>
-          <h2 class="sr-only">Contact context</h2>
-          <p>Appointments are arranged through the clinic team. Clinical urgency should be directed to your treating provider.</p>
-          <small>© <span data-year></span> Cardiac Imaging Clinic</small>
-        </section>
+      <div class="header-actions">
+        <a class="btn primary" href="#second-opinion">Second opinion</a>
+        <button class="burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
-    </footer>
+    </div>
   </div>
+</header>
 
-  <script src="assets/js/accessibility.js"></script>
-  <script src="assets/js/animations.js"></script>
-  <script src="assets/js/main.js"></script>
+<div class="drawer-overlay" hidden></div>
+<aside class="drawer" aria-label="Mobile menu">
+  <header>
+    <div class="brand" style="min-width:unset">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>Dr Muntasir Abo Al Hayja</strong>
+        <span>Cardiac Reporting</span>
+      </div>
+    </div>
+    <button class="burger" type="button" data-burger aria-label="Close menu" aria-expanded="false">✕</button>
+  </header>
+  <nav aria-label="Mobile">
+    <a data-nav href="index.html">Home</a>
+    <a data-nav href="services.html">Services</a>
+    <a data-nav href="clinicians.html">For Clinicians</a>
+    <a data-nav href="patients.html">For Patients</a>
+    <a data-nav href="about.html">About & Contact</a>
+  </nav>
+  <div style="margin-top:auto; display:grid; gap:10px;">
+    <a class="btn primary full" href="#second-opinion">Second opinion</a>
+    <a class="btn ghost full" href="about.html#contact">Contact</a>
+  </div>
+</aside>
+
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="prose">
+          <div class="kicker staged d1">
+            <svg class="icon stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-doc"/></svg>
+            Patient information
+          </div>
+          <h1 class="staged d2">Second opinion on existing cardiac imaging</h1>
+          <p class="staged d3">
+            This pathway is for patients seeking an expert second opinion on existing imaging and reports.
+            It supports discussion with your treating clinician. It is not emergency care.
+          </p>
+          <div class="hero-actions staged d4">
+            <a class="btn primary" href="#second-opinion">How it works</a>
+            <a class="btn ghost" href="about.html#contact">Contact</a>
+          </div>
+          <small class="staged d4">In urgent symptoms contact local emergency services.</small>
+        </div>
+
+        <div class="panel mask reveal" data-parallax="0.07">
+          <div style="padding:18px">
+            <div class="media" style="aspect-ratio: 16 / 10;">
+              <img src="assets/img/clinic.jpg" alt="Clinical environment (placeholder)" loading="eager">
+            </div>
+            <p class="meta" style="margin:12px 0 0">Replace patient pathway details once the doctor defines exact workflow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="second-opinion">
+    <div class="divider reveal"></div>
+    <div class="container">
+      <h2 class="reveal">How the second opinion works</h2>
+
+      <div class="timeline reveal" data-timeline style="margin-top:18px">
+        <div class="timeline-head">
+          <p class="meta">A clear step-by-step process — configured precisely once the service workflow is confirmed.</p>
+        </div>
+        <div class="timeline-track" aria-hidden="true"></div>
+        <div class="steps">
+          <div class="step"><strong>1) Submit</strong><span>Your existing report and the question you want answered.</span></div>
+          <div class="step"><strong>2) Confirm scope</strong><span>We confirm what can be answered based on available material.</span></div>
+          <div class="step"><strong>3) Review</strong><span>Consultant interpretation aligned to your specific question.</span></div>
+          <div class="step"><strong>4) Report</strong><span>A structured second-opinion report is produced.</span></div>
+          <div class="step"><strong>5) Next steps</strong><span>Use the report with your clinician to guide decisions.</span></div>
+        </div>
+      </div>
+
+      <div class="grid two" style="margin-top:18px">
+        <div class="card reveal">
+          <div class="icon-chip"><svg class="icon xl stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-doc"/></svg></div>
+          <h3>What you receive</h3>
+          <ul class="ilist" style="margin-top:12px">
+            <li><div class="dot">•</div><div><span class="meta">Structured written second-opinion report</span></div></li>
+            <li><div class="dot">•</div><div><span class="meta">Clear impression aligned to the question</span></div></li>
+            <li><div class="dot">•</div><div><span class="meta">Notes to support discussion with your clinician</span></div></li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <div class="icon-chip"><svg class="icon xl stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-shield"/></svg></div>
+          <h3>Important notes</h3>
+          <ul class="ilist" style="margin-top:12px">
+            <li><div class="dot">•</div><div><span class="meta">Not an emergency service</span></div></li>
+            <li><div class="dot">•</div><div><span class="meta">Does not replace your treating clinician</span></div></li>
+            <li><div class="dot">•</div><div><span class="meta">Scope depends on study quality and available material</span></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:18px">
+        <h3>FAQs</h3>
+        <div class="accordion" data-accordion style="margin-top:12px">
+          <div class="acc-item">
+            <button class="acc-btn" type="button" aria-expanded="false"><span>Do you perform scans?</span></button>
+            <div class="acc-panel"><div><p class="meta">No. Imaging is performed by your local provider. This service provides interpretation and reporting.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" type="button" aria-expanded="false"><span>Can I use the report with my doctor?</span></button>
+            <div class="acc-panel"><div><p class="meta">Yes. The report is designed to support discussion with your treating clinician.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" type="button" aria-expanded="false"><span>Is this an emergency service?</span></button>
+            <div class="acc-panel"><div><p class="meta">No. If you have urgent symptoms contact local emergency services.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" type="button" aria-expanded="false"><span>What do I need to submit?</span></button>
+            <div class="acc-panel"><div><p class="meta">Your existing imaging report and the specific question. Imaging access method is agreed later.</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-actions" style="margin-top:18px">
+        <a class="btn primary" href="about.html#contact">Contact form</a>
+        <a class="btn ghost" href="services.html">Services</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="min-width:unset; margin-bottom:10px;">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-title">
+            <strong>Dr Muntasir Abo Al Hayja</strong>
+            <span>Cardiac Interpretation</span>
+          </div>
+        </div>
+        <p class="meta">Patient information and second opinion pathway.</p>
+        <small>© <span data-year></span></small>
+      </div>
+      <div>
+        <strong>Navigate</strong><br><br>
+        <a href="index.html">Home</a><br>
+        <a href="services.html">Services</a><br>
+        <a href="clinicians.html">Clinicians</a><br>
+        <a href="about.html">About & Contact</a>
+      </div>
+      <div>
+        <strong>Legal</strong><br><br>
+        <a href="privacy.html">Privacy</a><br>
+        <a href="cookies.html">Cookies</a><br>
+        <a href="terms.html">Terms</a><br>
+        <a href="disclaimer.html">Medical Disclaimer</a><br>
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+      <div>
+        <strong>Contact</strong><br><br>
+        <span class="meta">[Secure Email]</span><br>
+        <span class="meta">[Phone]</span><br><br>
+        <a class="btn ghost" href="about.html#contact">Contact form</a>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

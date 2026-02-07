@@ -1,201 +1,271 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Referral-focused information for clinicians collaborating with the cardiac imaging practice." />
-  <title>Cardiac Imaging Clinic | Clinicians</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For Clinicians | Referral & Reporting Pathway</title>
+  <meta name="description" content="Clinician referral pathway for consultant cardiac imaging interpretation and structured reporting." />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/animations.css" />
+  <script src="assets/js/ui.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="container header-row">
-        <a class="brand" href="index.html" aria-label="Cardiac Imaging Clinic home">
-          <span class="brand__mark" aria-hidden="true">CI</span>
-          <span class="brand__text">Cardiac Imaging Clinic</span>
-        </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <ul class="nav-list">
-            <li><a data-nav-link href="index.html">Home</a></li>
-            <li><a data-nav-link href="services.html">Services</a></li>
-            <li><a data-nav-link href="clinicians.html" aria-current="page">Clinicians</a></li>
-            <li><a data-nav-link href="patients.html">Patients</a></li>
-            <li><a data-nav-link href="about.html">About</a></li>
-            <li><a data-nav-link href="accessibility.html">Accessibility</a></li>
-          </ul>
-          <a class="btn btn--primary" href="patients.html">Request consultation</a>
-        </nav>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
-          <span class="nav-toggle__bars" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div class="nav-overlay" data-nav-overlay hidden></div>
-      <nav class="nav-drawer" id="mobile-nav" data-nav-drawer aria-label="Mobile navigation">
-        <ul>
-          <li><a data-nav-link href="index.html">Home</a></li>
-          <li><a data-nav-link href="services.html">Services</a></li>
-          <li><a data-nav-link href="clinicians.html" aria-current="page">Clinicians</a></li>
-          <li><a data-nav-link href="patients.html">Patients</a></li>
-          <li><a data-nav-link href="about.html">About</a></li>
-          <li><a data-nav-link href="accessibility.html">Accessibility</a></li>
-        </ul>
-        <a class="btn btn--primary" href="patients.html">Request consultation</a>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container">
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Dr Muntasir Abo Al Hayja</strong>
+          <span>Consultant Cardiac Reporting</span>
+        </div>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="clinicians.html">Clinicians</a>
+        <a data-nav href="patients.html">Patients</a>
+        <a data-nav href="about.html">About & Contact</a>
       </nav>
-    </header>
 
-    <aside class="section-indicator" data-section-indicator aria-label="Section position"></aside>
-
-    <main id="main">
-      <section class="section hero" data-section-id data-section-label="Clinician overview" id="clinician-overview">
-        <div class="container hero__layout">
-          <div class="hero__copy">
-            <p class="eyebrow" data-hero-stage style="--hero-delay: 80ms;">For clinicians</p>
-            <h1 data-hero-stage style="--hero-delay: 160ms;">Direct referral collaboration for cardiac imaging decisions</h1>
-            <p class="lead" data-hero-stage style="--hero-delay: 250ms;">Referrals are reviewed by indication, reports are structured for clinical action, and discussion remains physician-to-physician when needed.</p>
-            <div class="hero__actions" data-hero-stage style="--hero-delay: 340ms;">
-              <a class="btn btn--primary" href="services.html">Review modalities</a>
-              <a class="btn btn--ghost" href="patients.html">Patient pathway</a>
-            </div>
-          </div>
-          <figure class="media-frame" data-hero-stage style="--hero-delay: 460ms;">
-            <picture>
-              <source type="image/avif" srcset="assets/img/panels/panel-collaboration-mobile.avif 760w, assets/img/panels/panel-collaboration.avif 1400w" sizes="(max-width: 64rem) 100vw, 44vw" />
-              <source type="image/webp" srcset="assets/img/panels/panel-collaboration-mobile.webp 760w, assets/img/panels/panel-collaboration.webp 1400w" sizes="(max-width: 64rem) 100vw, 44vw" />
-              <img src="assets/img/panels/panel-collaboration.jpg" width="1400" height="980" alt="Abstract panel representing clinician coordination" decoding="async" fetchpriority="high" />
-            </picture>
-          </figure>
-        </div>
-      </section>
-
-      <div class="section-divider" data-line aria-hidden="true"></div>
-
-      <section class="section section--surface" data-section-id data-section-label="Referral essentials" id="referral-essentials">
-        <div class="container">
-          <div class="section__head" data-reveal>
-            <p class="eyebrow">Referral essentials</p>
-            <h2>Inputs that sharpen interpretation</h2>
-            <p>Consistent referral structure helps protocoling and supports more useful comparative reporting.</p>
-          </div>
-          <div class="diagram">
-            <article class="card diagram__node" data-reveal data-reveal-group="clinician-diagram">
-              <h3>Clinical question</h3>
-              <p>State the specific decision point so imaging can target what matters most.</p>
-            </article>
-            <article class="card diagram__node" data-reveal data-reveal-group="clinician-diagram">
-              <h3>Prior data</h3>
-              <p>Share previous imaging and relevant findings for continuity and comparison.</p>
-            </article>
-            <article class="card diagram__node" data-reveal data-reveal-group="clinician-diagram">
-              <h3>Patient constraints</h3>
-              <p>Include factors that may influence modality choice or protocol adaptation.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <div class="section-divider" data-line aria-hidden="true"></div>
-
-      <section class="section" data-section-id data-section-label="Operational flow" id="operational-flow">
-        <div class="container feature-panel" data-panel>
-          <figure class="feature-panel__media" data-reveal>
-            <span class="feature-panel__media-mask" aria-hidden="true"></span>
-            <picture class="media-frame">
-              <source type="image/avif" srcset="assets/img/panels/panel-diagnostics-mobile.avif 760w, assets/img/panels/panel-diagnostics.avif 1400w" sizes="(max-width: 64rem) 100vw, 48vw" />
-              <source type="image/webp" srcset="assets/img/panels/panel-diagnostics-mobile.webp 760w, assets/img/panels/panel-diagnostics.webp 1400w" sizes="(max-width: 64rem) 100vw, 48vw" />
-              <img src="assets/img/panels/panel-diagnostics.jpg" width="1400" height="980" alt="Abstract operational pathway panel" loading="lazy" decoding="async" />
-            </picture>
-          </figure>
-          <div class="feature-panel__copy">
-            <p class="eyebrow" data-reveal>Operational flow</p>
-            <h2 data-reveal>Referral to report in one coordinated sequence</h2>
-            <div class="timeline" role="list">
-              <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="clinician-flow">
-                <span class="timeline__count" aria-hidden="true"></span>
-                <div>
-                  <h3>Protocol confirmation</h3>
-                  <p>Referral context is checked against modality fit and patient safety considerations.</p>
-                </div>
-              </article>
-              <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="clinician-flow">
-                <span class="timeline__count" aria-hidden="true"></span>
-                <div>
-                  <h3>Study execution</h3>
-                  <p>Acquisition follows indication-specific pathways with adjustment where required.</p>
-                </div>
-              </article>
-              <article class="timeline__item card" role="listitem" data-reveal data-reveal-group="clinician-flow">
-                <span class="timeline__count" aria-hidden="true"></span>
-                <div>
-                  <h3>Structured output</h3>
-                  <p>Findings are delivered in concise format with interpretation anchored to the referral question.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="section-divider" data-line aria-hidden="true"></div>
-
-      <section class="section section--surface" data-section-id data-section-label="Communication channels" id="communication-channels">
-        <div class="container">
-          <div class="section__head" data-reveal>
-            <p class="eyebrow">Communication channels</p>
-            <h2>Direct discussion when nuance matters</h2>
-          </div>
-          <div class="grid grid--3">
-            <article class="card" data-reveal data-reveal-group="clinician-comms">
-              <h3>Clarification calls</h3>
-              <p>Interpretive nuance can be reviewed directly when management decisions are sensitive.</p>
-            </article>
-            <article class="card" data-reveal data-reveal-group="clinician-comms">
-              <h3>Comparative review</h3>
-              <p>Longitudinal changes are discussed against prior reports when available.</p>
-            </article>
-            <article class="card" data-reveal data-reveal-group="clinician-comms">
-              <h3>Patient-facing alignment</h3>
-              <p>Messaging can be aligned across teams so patients receive consistent information.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer__grid">
-        <section>
-          <a class="brand" href="index.html">
-            <span class="brand__mark" aria-hidden="true">CI</span>
-            <span class="brand__text">Cardiac Imaging Clinic</span>
-          </a>
-          <p>Single-doctor cardiac imaging consultations with direct physician oversight and coordinated communication.</p>
-        </section>
-        <section>
-          <h2 class="sr-only">Policy links</h2>
-          <ul class="footer__nav">
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="terms.html">Terms</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-            <li><a href="accessibility.html">Accessibility</a></li>
-          </ul>
-        </section>
-        <section>
-          <h2 class="sr-only">Contact context</h2>
-          <p>Appointments are arranged through the clinic team. Clinical urgency should be directed to your treating provider.</p>
-          <small>© <span data-year></span> Cardiac Imaging Clinic</small>
-        </section>
+      <div class="header-actions">
+        <a class="btn primary" href="#referral">
+          <svg class="icon lg stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-checklist"/></svg>
+          Refer a study
+        </a>
+        <button class="burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
-    </footer>
+    </div>
   </div>
+</header>
 
-  <script src="assets/js/accessibility.js"></script>
-  <script src="assets/js/animations.js"></script>
-  <script src="assets/js/main.js"></script>
+<div class="drawer-overlay" hidden></div>
+<aside class="drawer" aria-label="Mobile menu">
+  <header>
+    <div class="brand" style="min-width:unset">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>Dr Muntasir Abo Al Hayja</strong>
+        <span>Cardiac Reporting</span>
+      </div>
+    </div>
+    <button class="burger" type="button" data-burger aria-label="Close menu" aria-expanded="false">✕</button>
+  </header>
+  <nav aria-label="Mobile">
+    <a data-nav href="index.html">Home</a>
+    <a data-nav href="services.html">Services</a>
+    <a data-nav href="clinicians.html">For Clinicians</a>
+    <a data-nav href="patients.html">For Patients</a>
+    <a data-nav href="about.html">About & Contact</a>
+  </nav>
+  <div style="margin-top:auto; display:grid; gap:10px;">
+    <a class="btn primary full" href="#referral">Refer a study</a>
+    <a class="btn ghost full" href="about.html#contact">General contact</a>
+  </div>
+</aside>
+
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="prose">
+          <div class="kicker staged d1">
+            <svg class="icon stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-checklist"/></svg>
+            Clinician pathway
+          </div>
+          <h1 class="staged d2">Referral, reporting & communication</h1>
+          <p class="staged d3">
+            A structured pathway for consultant interpretation and reporting of cardiac imaging studies. Designed to deliver clarity,
+            professional governance, and reliable communication back to the referrer.
+          </p>
+          <div class="hero-actions staged d4">
+            <a class="btn primary" href="#referral">Refer a study</a>
+            <a class="btn ghost" href="services.html">View services</a>
+          </div>
+          <small class="staged d4">Not for emergency referrals. In urgent situations use local emergency pathways.</small>
+        </div>
+
+        <div class="panel mask reveal" data-parallax="0.07">
+          <div style="padding:18px">
+            <div class="grid two">
+              <div class="card" style="margin:0">
+                <div class="icon-chip"><svg class="icon xl stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-lock"/></svg></div>
+                <h3 style="margin:0 0 6px">Secure handling</h3>
+                <p class="meta" style="margin:0">Share studies via agreed secure routes (details configured later).</p>
+              </div>
+              <div class="card" style="margin:0">
+                <div class="icon-chip"><svg class="icon xl stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-doc"/></svg></div>
+                <h3 style="margin:0 0 6px">Structured report</h3>
+                <p class="meta" style="margin:0">Clear impression aligned to the referral question.</p>
+              </div>
+            </div>
+            <div class="media" style="aspect-ratio: 16 / 10; margin-top:14px;">
+              <img src="assets/img/doctor-speaking.jpg" alt="Clinical discussion (placeholder)" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="divider reveal"></div>
+    <div class="container">
+      <h2 class="reveal">What to include in every referral</h2>
+      <div class="grid three" style="margin-top:18px">
+        <div class="card reveal">
+          <div class="icon-chip"><svg class="icon xl stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-checklist"/></svg></div>
+          <h3>Clinical question</h3>
+          <p class="meta">State the decision you need support with. Avoid vague “review please”.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon-chip"><svg class="icon xl stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-doc"/></svg></div>
+          <h3>Relevant context</h3>
+          <p class="meta">Key history, current symptoms (if relevant), and key prior results.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon-chip"><svg class="icon xl stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-lock"/></svg></div>
+          <h3>Complete study package</h3>
+          <p class="meta">Images + series/sequences required to answer the question reliably.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:18px">
+        <h3>Referral checklist</h3>
+        <ul class="ilist" style="margin-top:12px">
+          <li><div class="dot"><svg class="icon stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-checklist"/></svg></div><div><span class="meta">Patient identifier (per your governance) + DOB</span></div></li>
+          <li><div class="dot"><svg class="icon stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-doc"/></svg></div><div><span class="meta">Clinical question + key context</span></div></li>
+          <li><div class="dot"><svg class="icon stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-lock"/></svg></div><div><span class="meta">Study access method (secure route agreed)</span></div></li>
+          <li><div class="dot"><svg class="icon stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"/></svg></div><div><span class="meta">Preferred return route for the report</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact" id="referral">
+    <div class="divider reveal"></div>
+    <div class="container">
+      <h2 class="reveal">Refer a study</h2>
+      <div class="grid two" style="margin-top:18px">
+        <div class="card reveal">
+          <h3>Referral form (professional UI)</h3>
+          <p class="meta">This form is designed for structured enquiries. Configure delivery later (Formspree or secure email workflow).</p>
+
+          <div class="note" style="margin:12px 0 14px">
+            Do not include highly sensitive medical data in free-text fields. Keep to the clinical question and minimal necessary context.
+          </div>
+
+          <form class="form" action="#" method="post">
+            <div class="field">
+              <label for="org">Organisation / clinic</label>
+              <input id="org" name="org" autocomplete="organization" placeholder="[Hospital/Clinic name]" required>
+            </div>
+            <div class="field">
+              <label for="name">Referrer name</label>
+              <input id="name" name="name" autocomplete="name" placeholder="[Full name]" required>
+            </div>
+            <div class="field">
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="[name@hospital.tld]" required>
+            </div>
+            <div class="field">
+              <label for="question">Clinical question</label>
+              <textarea id="question" name="question" placeholder="[What decision do you need support with?]" required></textarea>
+            </div>
+
+            <div class="checkbox">
+              <input id="ack" name="ack" type="checkbox" required>
+              <label for="ack" class="meta">I confirm I will not include unnecessary sensitive patient information in the message field.</label>
+            </div>
+
+            <button class="btn primary full" type="submit">
+              <svg class="icon lg stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"/></svg>
+              Submit referral enquiry
+            </button>
+
+            <small>Form delivery will be wired once you select the submission method.</small>
+          </form>
+        </div>
+
+        <div class="card reveal">
+          <h3>Secure transfer (configured by agreement)</h3>
+          <p class="meta">
+            After referral submission, agree the secure route for study access/transfer. This site does not yet claim a specific platform.
+          </p>
+
+          <div class="accordion" data-accordion style="margin-top:14px">
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="false"><span>Accepted inputs (placeholder)</span></button>
+              <div class="acc-panel"><div>
+                <p class="meta">DICOM study access, structured report PDF, prior imaging reports (where relevant).</p>
+              </div></div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="false"><span>Outputs (placeholder)</span></button>
+              <div class="acc-panel"><div>
+                <p class="meta">Structured interpretation report + clinical impression delivered to the referrer via agreed route.</p>
+              </div></div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-btn" type="button" aria-expanded="false"><span>Turnaround (wording)</span></button>
+              <div class="acc-panel"><div>
+                <p class="meta">Turnaround is defined by clinical urgency and agreed at time of referral (no blanket promises).</p>
+              </div></div>
+            </div>
+          </div>
+
+          <div class="hero-actions" style="margin-top:14px">
+            <a class="btn ghost" href="about.html#contact">General contact</a>
+            <a class="btn primary" href="services.html">Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="min-width:unset; margin-bottom:10px;">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-title">
+            <strong>Dr Muntasir Abo Al Hayja</strong>
+            <span>Cardiac Reporting</span>
+          </div>
+        </div>
+        <p class="meta">Clinician-focused pathway for interpretation and reporting.</p>
+        <small>© <span data-year></span></small>
+      </div>
+      <div>
+        <strong>Navigate</strong><br><br>
+        <a href="index.html">Home</a><br>
+        <a href="services.html">Services</a><br>
+        <a href="patients.html">Patients</a><br>
+        <a href="about.html">About & Contact</a>
+      </div>
+      <div>
+        <strong>Legal</strong><br><br>
+        <a href="privacy.html">Privacy</a><br>
+        <a href="cookies.html">Cookies</a><br>
+        <a href="terms.html">Terms</a><br>
+        <a href="disclaimer.html">Medical Disclaimer</a><br>
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+      <div>
+        <strong>Contact</strong><br><br>
+        <span class="meta">[Secure Email]</span><br>
+        <span class="meta">[Phone]</span><br><br>
+        <a class="btn ghost" href="about.html#contact">Contact form</a>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

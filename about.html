@@ -1,166 +1,224 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="About the single-doctor cardiac imaging practice and its care philosophy." />
-  <title>Cardiac Imaging Clinic | About</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About & Contact | Dr Muntasir Abo Al Hayja</title>
+  <meta name="description" content="About Dr Muntasir Abo Al Hayja and contact details for clinician referrals and patient second opinions." />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/animations.css" />
+  <script src="assets/js/ui.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="container header-row">
-        <a class="brand" href="index.html" aria-label="Cardiac Imaging Clinic home">
-          <span class="brand__mark" aria-hidden="true">CI</span>
-          <span class="brand__text">Cardiac Imaging Clinic</span>
-        </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <ul class="nav-list">
-            <li><a data-nav-link href="index.html">Home</a></li>
-            <li><a data-nav-link href="services.html">Services</a></li>
-            <li><a data-nav-link href="clinicians.html">Clinicians</a></li>
-            <li><a data-nav-link href="patients.html">Patients</a></li>
-            <li><a data-nav-link href="about.html" aria-current="page">About</a></li>
-            <li><a data-nav-link href="accessibility.html">Accessibility</a></li>
-          </ul>
-          <a class="btn btn--primary" href="patients.html">Request consultation</a>
-        </nav>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
-          <span class="nav-toggle__bars" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div class="nav-overlay" data-nav-overlay hidden></div>
-      <nav class="nav-drawer" id="mobile-nav" data-nav-drawer aria-label="Mobile navigation">
-        <ul>
-          <li><a data-nav-link href="index.html">Home</a></li>
-          <li><a data-nav-link href="services.html">Services</a></li>
-          <li><a data-nav-link href="clinicians.html">Clinicians</a></li>
-          <li><a data-nav-link href="patients.html">Patients</a></li>
-          <li><a data-nav-link href="about.html" aria-current="page">About</a></li>
-          <li><a data-nav-link href="accessibility.html">Accessibility</a></li>
-        </ul>
-        <a class="btn btn--primary" href="patients.html">Request consultation</a>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container">
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-title">
+          <strong>Dr Muntasir Abo Al Hayja</strong>
+          <span>Consultant Cardiac Reporting</span>
+        </div>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="clinicians.html">Clinicians</a>
+        <a data-nav href="patients.html">Patients</a>
+        <a data-nav href="about.html">About & Contact</a>
       </nav>
-    </header>
 
-    <aside class="section-indicator" data-section-indicator aria-label="Section position"></aside>
-
-    <main id="main">
-      <section class="section hero" data-section-id data-section-label="About overview" id="about-overview">
-        <div class="container hero__layout">
-          <div class="hero__copy">
-            <p class="eyebrow" data-hero-stage style="--hero-delay: 80ms;">About the practice</p>
-            <h1 data-hero-stage style="--hero-delay: 160ms;">A focused cardiac imaging clinic with direct physician continuity</h1>
-            <p class="lead" data-hero-stage style="--hero-delay: 250ms;">The clinic model prioritizes diagnostic quality, measured communication, and collaborative planning with each patient’s broader care team.</p>
-            <div class="hero__actions" data-hero-stage style="--hero-delay: 340ms;">
-              <a class="btn btn--primary" href="services.html">Explore services</a>
-              <a class="btn btn--ghost" href="clinicians.html">Collaboration model</a>
-            </div>
-          </div>
-          <figure class="media-frame" data-hero-stage style="--hero-delay: 460ms;">
-            <picture>
-              <source type="image/avif" srcset="assets/img/hero/hero-mobile.avif 900w, assets/img/hero/hero-desktop.avif 1680w" sizes="(max-width: 64rem) 100vw, 44vw" />
-              <source type="image/webp" srcset="assets/img/hero/hero-mobile.webp 900w, assets/img/hero/hero-desktop.webp 1680w" sizes="(max-width: 64rem) 100vw, 44vw" />
-              <img src="assets/img/hero/hero-desktop.jpg" width="1680" height="1080" alt="Abstract visual representing modern cardiac imaging perspective" decoding="async" fetchpriority="high" />
-            </picture>
-          </figure>
-        </div>
-      </section>
-
-      <div class="section-divider" data-line aria-hidden="true"></div>
-
-      <section class="section section--surface" data-section-id data-section-label="Practice values" id="practice-values">
-        <div class="container">
-          <div class="section__head" data-reveal>
-            <p class="eyebrow">Practice values</p>
-            <h2>Clinical priorities that shape each encounter</h2>
-          </div>
-          <div class="grid grid--3">
-            <article class="card" data-reveal data-reveal-group="about-values">
-              <h3>Clarity</h3>
-              <p>Patients and clinicians receive clear interpretation context and straightforward next-step framing.</p>
-            </article>
-            <article class="card" data-reveal data-reveal-group="about-values">
-              <h3>Consistency</h3>
-              <p>Protocol and reporting approaches are standardized so follow-up comparisons remain reliable.</p>
-            </article>
-            <article class="card" data-reveal data-reveal-group="about-values">
-              <h3>Collaboration</h3>
-              <p>Coordination with referring teams is treated as part of diagnostic quality, not an afterthought.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <div class="section-divider" data-line aria-hidden="true"></div>
-
-      <section class="section" data-section-id data-section-label="Care framework" id="care-framework">
-        <div class="container feature-panel" data-panel>
-          <figure class="feature-panel__media" data-reveal>
-            <span class="feature-panel__media-mask" aria-hidden="true"></span>
-            <picture class="media-frame">
-              <source type="image/avif" srcset="assets/img/panels/panel-governance-mobile.avif 760w, assets/img/panels/panel-governance.avif 1400w" sizes="(max-width: 64rem) 100vw, 48vw" />
-              <source type="image/webp" srcset="assets/img/panels/panel-governance-mobile.webp 760w, assets/img/panels/panel-governance.webp 1400w" sizes="(max-width: 64rem) 100vw, 48vw" />
-              <img src="assets/img/panels/panel-governance.jpg" width="1400" height="980" alt="Abstract panel representing quality and governance framework" loading="lazy" decoding="async" />
-            </picture>
-          </figure>
-          <div class="feature-panel__copy">
-            <p class="eyebrow" data-reveal>Care framework</p>
-            <h2 data-reveal>How the clinic structures quality in daily practice</h2>
-            <div class="diagram">
-              <article class="card diagram__node" data-reveal data-reveal-group="about-diagram">
-                <h3>Clinical signal</h3>
-                <p>Choose the study that best answers the current question.</p>
-              </article>
-              <article class="card diagram__node" data-reveal data-reveal-group="about-diagram">
-                <h3>Technical execution</h3>
-                <p>Apply protocol rigor while adapting to patient-specific factors.</p>
-              </article>
-              <article class="card diagram__node" data-reveal data-reveal-group="about-diagram">
-                <h3>Shared understanding</h3>
-                <p>Deliver findings in language useful to clinicians and understandable to patients.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer__grid">
-        <section>
-          <a class="brand" href="index.html">
-            <span class="brand__mark" aria-hidden="true">CI</span>
-            <span class="brand__text">Cardiac Imaging Clinic</span>
-          </a>
-          <p>Single-doctor cardiac imaging consultations with direct physician oversight and coordinated communication.</p>
-        </section>
-        <section>
-          <h2 class="sr-only">Policy links</h2>
-          <ul class="footer__nav">
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="terms.html">Terms</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-            <li><a href="accessibility.html">Accessibility</a></li>
-          </ul>
-        </section>
-        <section>
-          <h2 class="sr-only">Contact context</h2>
-          <p>Appointments are arranged through the clinic team. Clinical urgency should be directed to your treating provider.</p>
-          <small>© <span data-year></span> Cardiac Imaging Clinic</small>
-        </section>
+      <div class="header-actions">
+        <a class="btn primary" href="clinicians.html#referral">Refer a study</a>
+        <button class="burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
-    </footer>
+    </div>
   </div>
+</header>
 
-  <script src="assets/js/accessibility.js"></script>
-  <script src="assets/js/animations.js"></script>
-  <script src="assets/js/main.js"></script>
+<div class="drawer-overlay" hidden></div>
+<aside class="drawer" aria-label="Mobile menu">
+  <header>
+    <div class="brand" style="min-width:unset">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>Dr Muntasir Abo Al Hayja</strong>
+        <span>Cardiac Reporting</span>
+      </div>
+    </div>
+    <button class="burger" type="button" data-burger aria-label="Close menu" aria-expanded="false">✕</button>
+  </header>
+  <nav aria-label="Mobile">
+    <a data-nav href="index.html">Home</a>
+    <a data-nav href="services.html">Services</a>
+    <a data-nav href="clinicians.html">For Clinicians</a>
+    <a data-nav href="patients.html">For Patients</a>
+    <a data-nav href="about.html">About & Contact</a>
+  </nav>
+  <div style="margin-top:auto; display:grid; gap:10px;">
+    <a class="btn primary full" href="clinicians.html#referral">Refer a study</a>
+    <a class="btn ghost full" href="#contact">Contact</a>
+  </div>
+</aside>
+
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="prose">
+          <div class="kicker staged d1">
+            <svg class="icon stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-heart"/></svg>
+            Consultant-led service
+          </div>
+          <h1 class="staged d2">About Dr Muntasir Abo Al Hayja</h1>
+          <p class="staged d3">
+            Senior consultant cardiologist with 25+ years’ experience in cardiac clinical care and imaging interpretation.
+            This site is a professional service outline — replace placeholders with verified credentials and affiliations.
+          </p>
+          <div class="hero-actions staged d4">
+            <a class="btn primary" href="#contact">Contact</a>
+            <a class="btn ghost" href="clinicians.html#referral">Refer a study</a>
+          </div>
+        </div>
+
+        <div class="panel mask reveal" data-parallax="0.06">
+          <div style="padding:18px">
+            <div class="media" style="aspect-ratio: 4 / 5;">
+              <img src="assets/img/doctor-headshot.jpg" alt="Dr Muntasir Abo Al Hayja (placeholder headshot)" loading="eager">
+            </div>
+            <p class="meta" style="margin:12px 0 0">Replace with a high quality headshot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="divider reveal"></div>
+    <div class="container">
+      <h2 class="reveal">Professional approach</h2>
+      <div class="grid three" style="margin-top:18px">
+        <div class="card reveal">
+          <div class="icon-chip"><svg class="icon xl stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-doc"/></svg></div>
+          <h3>Structured interpretation</h3>
+          <p class="meta">Clear outputs aligned to the clinical question.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon-chip"><svg class="icon xl stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-shield"/></svg></div>
+          <h3>Governance mindset</h3>
+          <p class="meta">Quality-oriented reporting and professional responsibility.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon-chip"><svg class="icon xl stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"/></svg></div>
+          <h3>Professional communication</h3>
+          <p class="meta">Clear pathway for referrers and second opinions (non-emergency).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact" id="contact">
+    <div class="divider reveal"></div>
+    <div class="container">
+      <h2 class="reveal">Contact</h2>
+      <div class="grid two" style="margin-top:18px">
+        <div class="card reveal">
+          <h3>Contact details</h3>
+          <ul class="ilist" style="margin-top:12px">
+            <li><div class="dot"><svg class="icon stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"/></svg></div><div><span class="meta">[Secure Email]</span></div></li>
+            <li><div class="dot"><svg class="icon stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-phone"/></svg></div><div><span class="meta">[Phone]</span></div></li>
+            <li><div class="dot"><svg class="icon stroke" aria-hidden="true"><use href="assets/icons/sprite.svg#i-globe"/></svg></div><div><span class="meta">Worldwide (remote service)</span></div></li>
+          </ul>
+          <div class="note" style="margin-top:14px">
+            Do not send emergency or time-critical requests through this site.
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3>Professional contact form</h3>
+          <p class="meta">Form is UI-ready. We will wire delivery (Formspree / secure workflow) after you confirm the method.</p>
+
+          <div class="note" style="margin:12px 0 14px">
+            Do not include highly sensitive medical information in free-text fields.
+          </div>
+
+          <form class="form" action="#" method="post">
+            <div class="field">
+              <label for="type">I am a…</label>
+              <select id="type" name="type" required>
+                <option value="" selected disabled>Select one</option>
+                <option>Clinician / clinic</option>
+                <option>Patient (second opinion)</option>
+                <option>General enquiry</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fullname">Full name</label>
+              <input id="fullname" name="fullname" autocomplete="name" required placeholder="[Your name]">
+            </div>
+            <div class="field">
+              <label for="email2">Email</label>
+              <input id="email2" name="email" type="email" autocomplete="email" required placeholder="[name@email]">
+            </div>
+            <div class="field">
+              <label for="msg">Message</label>
+              <textarea id="msg" name="message" required placeholder="[Your enquiry / clinical question]"></textarea>
+            </div>
+            <div class="checkbox">
+              <input id="ack2" name="ack2" type="checkbox" required>
+              <label for="ack2" class="meta">I confirm I will not include unnecessary sensitive medical information in the message.</label>
+            </div>
+            <button class="btn primary full" type="submit">Submit</button>
+            <small>Fallback: use email if form delivery is not yet configured.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="min-width:unset; margin-bottom:10px;">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-title">
+            <strong>Dr Muntasir Abo Al Hayja</strong>
+            <span>Cardiac Reporting</span>
+          </div>
+        </div>
+        <p class="meta">Replace placeholders with verified contact details.</p>
+        <small>© <span data-year></span></small>
+      </div>
+      <div>
+        <strong>Navigate</strong><br><br>
+        <a href="index.html">Home</a><br>
+        <a href="services.html">Services</a><br>
+        <a href="clinicians.html">Clinicians</a><br>
+        <a href="patients.html">Patients</a>
+      </div>
+      <div>
+        <strong>Legal</strong><br><br>
+        <a href="privacy.html">Privacy</a><br>
+        <a href="cookies.html">Cookies</a><br>
+        <a href="terms.html">Terms</a><br>
+        <a href="disclaimer.html">Medical Disclaimer</a><br>
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+      <div>
+        <strong>Contact</strong><br><br>
+        <span class="meta">[Secure Email]</span><br>
+        <span class="meta">[Phone]</span><br><br>
+        <a class="btn ghost" href="#contact">Contact form</a>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
