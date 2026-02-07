@@ -289,3 +289,17 @@ body.nav-open .drawer{ transform: translateX(0); }
 .footer a:hover{ color: var(--text); text-decoration:none; }
 @media (max-width: 980px){ .footer-grid{ grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px){ .footer-grid{ grid-template-columns: 1fr; } }
+
+/* --- FIX: drawer overlay must not block clicks when closed --- */
+.drawer-overlay[hidden]{
+  display:none !important;
+}
+.drawer-overlay{
+  pointer-events:none;
+  opacity:0;
+}
+.drawer.is-open + .drawer-overlay,
+.drawer-overlay.is-open{
+  pointer-events:auto;
+  opacity:1;
+}
